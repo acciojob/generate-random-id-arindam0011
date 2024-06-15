@@ -7,12 +7,12 @@ function makeid(l) {
 		];
 let ans="";
 	for (let i=0; i<l; i++){
-		ans+=arr[paseInt(Math.random()*arr.length)]
+		ans+=arr[parseInt(Math.random()*arr.length)]
 	}
 
-	console.log(ans);
+	return ans;
 }
-
+  
 // Do not change the code below.
 const l = prompt("Enter a number.");
 alert(makeid(l));
